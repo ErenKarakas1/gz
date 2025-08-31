@@ -32,4 +32,4 @@
 | `gz done` | `git switch main` <br /> `git branch --delete --force <switched-branch-name>` <br /> `git pull --ff-only origin main` |
 
 ### gz add
-
+![gz add screenshot](images/add.png)
