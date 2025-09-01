@@ -12,8 +12,8 @@ pub struct Entry {
 impl Git {
     pub fn open() -> Self {
         let cwd = Path::new(".");
-        let repo_root = PathBuf::from(run_git(cwd, ["rev-parse", "--show-toplevel"]).trim());
-        return Self { workdir: repo_root };
+        let workdir = PathBuf::from(run_git(cwd, ["rev-parse", "--show-toplevel"]).trim());
+        return Self { workdir };
     }
 
     pub fn workdir(&self) -> &Path {

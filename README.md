@@ -30,6 +30,7 @@
 | `gz uncommit [N]` | `git reset HEAD~[N] (default: 1)` |
 | `gz branch <name>` | `git switch --create <name>` |
 | `gz done` | `git switch main` <br /> `git branch --delete --force <switched-branch-name>` <br /> `git pull --ff-only origin main` |
+| `gz add` | [Screenshot below](#gz-add) |
 
 ### gz add
 ![gz add screenshot](images/add.png)

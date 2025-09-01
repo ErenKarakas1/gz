@@ -55,10 +55,10 @@ impl App {
 }
 
 pub fn run_tui(screen: CurrentScreen) -> Result<(), Box<dyn Error>> {
-    let mut manager = GzTerminal::new()?;
+    let mut gzterm = GzTerminal::new()?;
     let mut app = App::new(screen);
 
-    run_app(manager.terminal_mut(), &mut app)?;
+    run_app(gzterm.terminal_mut(), &mut app)?;
     Ok(())
 }
 
